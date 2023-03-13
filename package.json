@@ -1,0 +1,17 @@
+{
+	"name": "javascript",
+	"version": "1.0.0",
+	"description": "",
+	"main": "test.mts",
+	"scripts": {
+		"start": "nodemon test",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodyMan0/JavascriptPlayGround.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
