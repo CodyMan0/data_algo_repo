@@ -2,9 +2,8 @@
 	"name": "javascript",
 	"version": "1.0.0",
 	"description": "",
-	"main": "test.mts",
 	"scripts": {
-		"start": "nodemon test",
+		"start": "nodemon origin.mjs",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
