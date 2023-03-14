@@ -1,5 +1,6 @@
 import { Node, LinkedList } from "./linkedList/linkedList.mjs";
 import { Stack } from "./stack /stack.mjs";
+import { Queue } from "./queue/queue.mjs";
 
 let node1 = new Node(1);
 let node2 = new Node(2);
@@ -62,3 +63,16 @@ console.log(stack.peek());
 stack.pop();
 console.log(stack.peek());
 console.log(stack.isEmpty());
+
+let queue = new Queue();
+console.log("======== queue ");
+
+queue.enqueue(5);
+queue.enqueue(2);
+queue.enqueue(3);
+queue.enqueue(4);
+
+console.log(queue.front());
+console.log("======== dequeue ");
+
+console.log(queue.isEmpty());
