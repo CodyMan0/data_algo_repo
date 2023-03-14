@@ -24,6 +24,7 @@ class DoubleLinkedList {
 			}
 		}
 		text += "]";
+		console.log(text);
 	}
 
 	clear() {
@@ -83,7 +84,7 @@ class DoubleLinkedList {
 				this.head = null;
 				this.tail = null;
 			} else {
-				this.header = this.head.next;
+				this.head = this.head.next;
 				this.head.prev = null;
 			}
 			this.count--;

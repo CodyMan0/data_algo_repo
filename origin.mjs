@@ -1,6 +1,7 @@
 import { Node, LinkedList } from "./linkedList/linkedList.mjs";
 import { Stack } from "./stack /stack.mjs";
 import { Queue } from "./queue/queue.mjs";
+import { Deque } from "./deque/Deque.mjs";
 
 let node1 = new Node(1);
 let node2 = new Node(2);
@@ -76,3 +77,18 @@ console.log(queue.front());
 console.log("======== dequeue ");
 
 console.log(queue.isEmpty());
+
+let deque = new Deque();
+
+console.log("======== Deque ");
+console.log(`isEmpty ${deque.isEmpty()}`);
+deque.addFirst(1);
+deque.addFirst(2);
+deque.addFirst(3);
+deque.addFirst(5);
+deque.addFirst(6);
+deque.printAll();
+
+console.log("======== remove ");
+deque.removeFirst();
+deque.printAll();
