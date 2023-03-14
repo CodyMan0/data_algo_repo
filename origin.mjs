@@ -1,4 +1,5 @@
 import { Node, LinkedList } from "./linkedList/linkedList.mjs";
+import { Stack } from "./stack /stack.mjs";
 
 let node1 = new Node(1);
 let node2 = new Node(2);
@@ -48,3 +49,16 @@ let secondNode = list.getNodeAt(2);
 
 console.log(secondNode);
 list.printAll();
+
+let stack = new Stack();
+console.log("======== stack");
+stack.push(1);
+stack.push(2);
+stack.push(3);
+stack.push(4);
+
+console.log("======== 두번째 출력 ");
+console.log(stack.peek());
+stack.pop();
+console.log(stack.peek());
+console.log(stack.isEmpty());
