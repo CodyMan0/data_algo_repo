@@ -2,6 +2,8 @@ import { Node, LinkedList } from "./linkedList/linkedList.mjs";
 import { Stack } from "./stack /stack.mjs";
 import { Queue } from "./queue/queue.mjs";
 import { Deque } from "./deque/Deque.mjs";
+import { HashTable } from "./hashTable/HashTable.mjs";
+import { HashSet } from "./hashSet/HashSet.mjs";
 
 let node1 = new Node(1);
 let node2 = new Node(2);
@@ -92,3 +94,31 @@ deque.printAll();
 console.log("======== remove ");
 deque.removeFirst();
 deque.printAll();
+
+console.log("======== hashTable ");
+let hashTable = new HashTable();
+hashTable.set(1, "이운제");
+hashTable.set(4, "최진철");
+hashTable.set(20, "홍명보");
+hashTable.set(16, "송종국");
+hashTable.set(22, "박지성");
+hashTable.set(21, "최대욱");
+hashTable.set(5, "설기현");
+hashTable.set(10, "이천수");
+
+console.log(hashTable.get(1));
+console.log(hashTable.remove(1));
+console.log(hashTable.get(1));
+
+console.log("======== hashSet ");
+let hashSet = new HashSet();
+
+console.log(hashSet.isEmpty());
+
+hashSet.add(1);
+hashSet.add(1);
+hashSet.add(123);
+hashSet.add(512);
+
+hashSet.printAll();
+console.log(hashSet.isEmpty());
