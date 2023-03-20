@@ -17,7 +17,7 @@ console.log(node1.next.data);
 console.log(node1.next.next.data);
 
 let list = new LinkedList();
-console.log("======== insertAt");
+console.log("======== insertAt");  
 list.insertAt(0, 0);
 list.insertAt(1, 1);
 list.insertAt(2, 2);
@@ -122,3 +122,4 @@ hashSet.add(512);
 
 hashSet.printAll();
 console.log(hashSet.isEmpty());
+  
