@@ -4,6 +4,7 @@ import { Queue } from "./queue/queue.mjs";
 import { Deque } from "./deque/Deque.mjs";
 import { HashTable } from "./hashTable/HashTable.mjs";
 import { HashSet } from "./hashSet/HashSet.mjs";
+import { BinaryTree } from "./tree/binaryTree.mjs";
 
 let node1 = new Node(1);
 let node2 = new Node(2);
@@ -17,7 +18,7 @@ console.log(node1.next.data);
 console.log(node1.next.next.data);
 
 let list = new LinkedList();
-console.log("======== insertAt");  
+console.log("======== insertAt");
 list.insertAt(0, 0);
 list.insertAt(1, 1);
 list.insertAt(2, 2);
@@ -122,4 +123,29 @@ hashSet.add(512);
 
 hashSet.printAll();
 console.log(hashSet.isEmpty());
-  
+
+let tree1 = new BinaryTree(1);
+let tree2 = new BinaryTree(2);
+let tree3 = new BinaryTree(3);
+let tree4 = new BinaryTree(4);
+let tree5 = new BinaryTree(5);
+let tree6 = new BinaryTree(6);
+let tree7 = new BinaryTree(7);
+
+tree1.setLeftSubTree(tree2);
+tree1.setRightSubTree(tree3);
+tree2.setLeftSubTree(tree4);
+tree2.setRightSubTree(tree5);
+tree3.setLeftSubTree(tree6);
+tree3.setRightSubTree(tree7);
+
+console.log("오른쪽 자식", tree1.getRightSubTree());
+
+console.log("전위 순회");
+tree1.preOrderTraversal(tree1);
+
+console.log("중위 순회");
+tree1.inOrderTraversal(tree1);
+
+console.log("후");
+tree1.postOrderTraversal(tree1);
